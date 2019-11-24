@@ -1,0 +1,46 @@
+{
+  box-sizing: border-box;
+}
+header{
+  text-align: center;
+  background-image: url("texture.jpg");
+  background-color: #F5B7B1;
+  padding: 20px;
+}
+
+left_col{
+  float: left;
+  background-color:#660033;
+  background-image: url("8.jpg");
+  width: 10%;
+  height: 65%;
+  padding: 20px;
+}
+right_col{
+  float: left;
+  background: #FFEBEE;
+  width: 83%;
+  height: 65%;
+  padding: 20px;
+
+}
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+footer{
+  background-color: #E0E0E0;
+  height: 10%;
+
+}
+@media (max-width: 600px) {
+left_col, right_col{
+  width: 100%;
+  height: auto;
+}
+}
+table{
+  margin: auto;
+}
