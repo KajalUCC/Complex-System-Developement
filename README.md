@@ -11,7 +11,9 @@ We have provided a solution where the Controller acts as a load balancer and han
 
 Tools & Technologies used :
 
-  -- MySQL for Database
-  -- HTML for PHP
-  -- Backend Handling for Java
+MySQL for Database
+
+HTML for PHP
+
+Backend Handling for Java
   
