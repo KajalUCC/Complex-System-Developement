@@ -25,16 +25,16 @@ public class infraServlet extends HttpServlet {
 
             while (resultSet.next()) {
 
-                if (resultSet.getFloat (2)<=5)
+                if (resultSet.getFloat (2)<10)
                 {
                     ps= dbConnect.connnect().prepareStatement("delete from server where server_id=?");
                     ps.setInt (1,resultSet.getInt (1));
-                    resultSet = ps.executeQuery();
+                    //resultSet = ps.executeQuery();
                     resultSet.next ();
                 }
             server_count++;
             cap = cap + Float.parseFloat(resultSet.getString(6));
-            if(resultSet.getFloat(2)<10)
+            if(resultSet.getFloat(2)>10)
                 server_aval++;
                 temp = temp + Double.parseDouble(resultSet.getString(5));
             }
@@ -46,6 +46,7 @@ public class infraServlet extends HttpServlet {
                 request.setAttribute("server_temp", temp);
                 request.setAttribute("server_power", power);
                 request.getRequestDispatcher("infraDetails.jsp").forward(request, response);
+                
 
         } catch (SQLException e) {
             e.printStackTrace();

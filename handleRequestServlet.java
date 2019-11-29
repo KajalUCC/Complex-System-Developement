@@ -29,6 +29,7 @@ public class handleRequestServlet extends HttpServlet {
                     ps.setString(4,"256");
                     ps.setString(5,"application");
                     i = ps.executeUpdate();
+
                 }
                 catch (SQLException | ClassNotFoundException e) {
                     e.printStackTrace ( );
