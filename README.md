@@ -15,6 +15,7 @@ We have provided a solution where the Controller acts as a load balancer and han
 MySQL 8.0 for Database.
 HTML,CSS for UI.
 Java EE 1.8 for Server Side Implementation.
+Apache Tomcat 8.0
 
 ### Setup Guide:-
 1. Install MySQL database locally on the machine and connect to the database through MySQL workbench.
@@ -22,6 +23,7 @@ Java EE 1.8 for Server Side Implementation.
 3. Add mysql-connector-java-8.0.18 jar as external jar to the project.
 4. Create tables as per database schema(mentioned in the document) in MySQL database.
 5. Change database connection url and credentials in the DBConnect file under src package.
+6. Add Apache Tomcat Server 8.0 to the IDE for launching the application.
 6. Now the project can be executed successfully.
 
 
